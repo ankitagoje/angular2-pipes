@@ -1,0 +1,25 @@
+
+<!--Built in Pipes-->
+<h1>Built in Pipes</h1>
+<!-- lowercase/ uppercase Pipe -->
+<h2>Lowercase/ Uppercase Pipe</h2>
+<h3>{{text | lowercase}}</h3>
+<input type="text" #nameVal (keyup)="0" />
+<h3>{{nameVal.value | uppercase}}</h3>
+
+<hr>
+<!-- slice Pipe -->
+<h2>Slice Pipe</h2>
+<h3>{{text | slice: 0 : 17}}</h3>
+
+<hr>
+<!-- date Pipe -->
+<h2>Date Pipe</h2>
+<h3>{{currentDate | date: 'fullDate'}}</h3>
+
+<hr>
+<!-- decimal Pipe -->
+<h2>Decimal Pipe Example</h2>
+<p>Format : <b>minIntegerDigits.minFractionDigits-maxFractionDigits</b></p>
+<p>pi (no formatting): {{pi}}</p>
+<p>pi (2.10-10): {{pi | number:'2.3-10'}}</p>
